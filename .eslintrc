@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": [2, "always-multiline"],
+    "max-len": ["warn", { "code": 120, "ignoreStrings": true }],
+    "no-console": 0,
+    "no-throw-literal": 0,
+    "no-unused-vars": [
+      2,
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "quotes": [2, "single"],
+    "react/jsx-closing-bracket-location": [2, "after-props"],
+    "react/jsx-tag-spacing": [
+      2,
+      {
+        "beforeSelfClosing": "always"
+      }
+    ],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "strict": [2, "never"]
+  },
+  "extends": ["prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "plugins": ["import", "react", "prettier"]
+}
